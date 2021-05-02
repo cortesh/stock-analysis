@@ -18,11 +18,10 @@
 ### So this study is inconclusive with respect to the specific stock "DQ" in relation to other stocks once both years are considered, and that the pattern that emerges is that the greatest driver for success or failure seems to be the overall market conditions in each of the years of the study.
 
 ### Continuing to the second major requirement, the project sought to compare two methods of coding to determine processing speed as a proxy for scaleability (ability to handle larger datasets without performance loss).  The first method ("A") build a code with 2 nested for loops that read through all records in a given table (see below)
-
-
    
-   
-   '4) Loop through tickersFor i = 0 To 11
+```
+   '4) Loop through tickers
+   For i = 0 To 11
        ticker = tickers(i)
        totalVolume = 0
        '5) loop through rows in the data
@@ -49,7 +48,7 @@
 
            End If
        Next j
-
+```
 
 
 
