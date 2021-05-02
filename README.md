@@ -50,15 +50,47 @@
        Next j
 ```
 
+### The second method, also known as "Refactoring", limited the code to a single For loop that dynamically builds 4 arrays that hold the values for each ticker symbol and outputs it to results sheet.  This method ("B") it is hoped will cut down on processing time as it needs to go through each row only once, checking for the appropriate information.  The modified code looks like this.
+```
+   '4) Loop through tickers
+   For i = 0 To 11
+       ticker = tickers(i)
+       totalVolume = 0
+       '5) loop through rows in the data
+       Worksheets(yearValue).Activate
+       For j = 2 To RowCount
+           '5a) Get total volume for current ticker
+           If Cells(j, 1).Value = ticker Then
 
+               totalVolume = totalVolume + Cells(j, 8).Value
 
+           End If
+           '5b) get starting price for current ticker
+           If Cells(j - 1, 1).Value <> ticker And Cells(j, 1).Value = ticker Then
 
+               startingPrice = Cells(j, 6).Value
+
+           End If
+
+           '5c) get ending price for current ticker
+           If Cells(j + 1, 1).Value <> ticker And Cells(j, 1).Value = ticker Then
+
+               endingPrice = Cells(j, 6).Value
+
+           End If
+       Next j
+```
+
+### Once completed speed counters were encoded to test each codes run speed (The results are displayed in screen captures located in the Resources folder as per project instructions).  Below you will see the results of the speed tests side by side in tabular format.
 
 ![Code Performance Comparison](https://github.com/cortesh/stock-analysis/blob/main/Resources/VBA_Challange_Code_Performance_Comparison.png)
 
-## Summary
-### para 1
-### para 2
-### para 3
+### As is quite clear the second method ("B") is vastly superior cutting processing time by 87% on average for both years!
 
+## Summary
+### To conclude, we can say that the original comparision of "DQ" stock against its peers was inconclusive but that there seems to be value in researching further what made market conditions so dramatically different between 2017 and 2018.  Perhaps a next step would be to control for average market performance moving forward.
+
+### In terms of the bake off between coding methods, in general we can say that beyond the results of the comparision, learning to re-code earlier versions of code for greater simplicity and efficiency is a great way to learn how code works and how to make it work better with better coding techniques.
+
+### This was certainly the case with the Refactored code that ran in a fraction of the time as the original although figuring out how to build the arrays dynamically took some real thinking.
 
