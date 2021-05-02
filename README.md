@@ -2,9 +2,9 @@
 
 ## Overview
 
-### para 1
-### para 2
-### para 3
+### The purpose of this project is to help develop an app to analyze 12 stocks across two years to identify trends with limited capabilities to select year and reset the results page once completed.  
+
+### A second requirement of the project was to develop two methods (method A and B) to test speed and scaleability of the app.
 
 
 
