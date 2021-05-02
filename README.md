@@ -11,7 +11,7 @@ The first step was to test the performance of a particular stock (ticker "DQ") a
 
 ![2018 Returns](https://github.com/cortesh/stock-analysis/blob/main/Resources/VBA_Challange_2018_returns.png)
 
-It is important to note that before concluding that "DQ" was not an outlier in its poor performance when compared to the other 9 stocks also in negative territory for this period.  What is more compelling still is that a comparison to the previous year ("2017") reveals that  all but one stock was in positive territory, with "DQ" ranked in 1st place! (see below)
+It is important to note that  "DQ" was not an outlier in its poor performance when compared to the other 9 stocks also in negative territory for this period.  What is more compelling still is that a comparison to the previous year ("2017") reveals that  all but one stock was in positive territory, with "DQ" ranked in 1st place! (see below)
 
 ![2017 Returns](https://github.com/cortesh/stock-analysis/blob/main/Resources/VBA_Challange_2017_returns.png)
 
