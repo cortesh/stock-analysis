@@ -20,32 +20,33 @@
 ### Continuing to the second major requirement, the project sought to compare two methods of coding to determine processing speed as a proxy for scaleability (ability to handle larger datasets without performance loss).  The first method ("A") build a code with 2 nested for loops that read through all records in a given table (see below)
 
    ''4) Loop through tickers
-   'For i = 0 To 11
-       'ticker = tickers(i)
-       'totalVolume = 0
-       ''5) loop through rows in the data
+   For i = 0 To 11
+       ticker = tickers(i)
+       totalVolume = 0
+       '5) loop through rows in the data
        'Worksheets(yearValue).Activate
-       'For j = 2 To RowCount
-           ''5a) Get total volume for current ticker
-           'If Cells(j, 1).Value = ticker Then
+       
+       For j = 2 To RowCount
+           '5a) Get total volume for current ticker
+           If Cells(j, 1).Value = ticker Then
 
-               'totalVolume = totalVolume + Cells(j, 8).Value
+               totalVolume = totalVolume + Cells(j, 8).Value
 
-           'End If
-           ''5b) get starting price for current ticker
-           'If Cells(j - 1, 1).Value <> ticker And Cells(j, 1).Value = 'ticker Then
+           End If
+           '5b) get starting price for current ticker
+           If Cells(j - 1, 1).Value <> ticker And Cells(j, 1).Value = 'ticker Then
 
-               'startingPrice = Cells(j, 6).Value
+               startingPrice = Cells(j, 6).Value
 
-           'End If
+           End If
 
-           ''5c) get ending price for current ticker
-           'If Cells(j + 1, 1).Value <> ticker And Cells(j, 1).Value = 'ticker Then
+           '5c) get ending price for current ticker
+           If Cells(j + 1, 1).Value <> ticker And Cells(j, 1).Value = 'ticker Then
 
-               'endingPrice = Cells(j, 6).Value
+               endingPrice = Cells(j, 6).Value
 
-           'End If
-       'Next j
+           End If
+       Next j
 
 
 
