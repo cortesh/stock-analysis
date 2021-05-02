@@ -19,12 +19,12 @@
 
 ### Continuing to the second major requirement, the project sought to compare two methods of coding to determine processing speed as a proxy for scaleability (ability to handle larger datasets without performance loss).  The first method ("A") build a code with 2 nested for loops that read through all records in a given table (see below)
 
-   ''4) Loop through tickers
+   '4) Loop through tickers
    For i = 0 To 11
        ticker = tickers(i)
        totalVolume = 0
        '5) loop through rows in the data
-       'Worksheets(yearValue).Activate
+       Worksheets(yearValue).Activate
        
        For j = 2 To RowCount
            '5a) Get total volume for current ticker
