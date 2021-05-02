@@ -6,17 +6,24 @@
 
 ### A second requirement of the project was to develop two methods (method A and B) to test speed and scaleability of the app.
 
-
-
 ## Results
-### para 1
-### para 2
-### para 3
+### The first step was to test the performance of a particular stock (ticker "DQ") against other stocks in the portfolio.  This was done by calculating the Return as the ending price / starting price - 1.  When we looked at the results for 2018, it is clear that not only did DQ perform poorly for that year, but that all but two stocks ended the year down.  This data was displayed with a table that listed the stocks by ticker symbol, Total Daily Volume and Returns, conditionally formatted to turn the cell fill green when in positive territory and red when below.  This image is located in the Resources folder as per project requirements.  I have converted that table into a bar chart that I believe will make those relative results more impactful and immediate (see below):
 
+![2018 Returns](https://github.com/cortesh/stock-analysis/blob/main/Resources/VBA_Challange_2018_returns.png)
+
+### It is important to note that before concluding that "DQ" was not an outlier in its poor performance when compared to the other 9 stocks also in negative territory for this period.  What is more compelling still is that a comparison to the previous year ("2017") reveals that  all but one stock was in positive territory, with "DQ" ranked in 1st place! (see below)
 
 ![2017 Returns](https://github.com/cortesh/stock-analysis/blob/main/Resources/VBA_Challange_2017_returns.png)
 
-![2018 Returns](https://github.com/cortesh/stock-analysis/blob/main/Resources/VBA_Challange_2018_returns.png)
+### So this study is inconclusive with respect to the specific stock "DQ" in relation to other stocks once both years are considered, and that the pattern that emerges is that the greatest driver for success or failure seems to be the overall market conditions in each of the years of the study.
+
+### para 3
+
+
+
+
+
+
 
 ![Code Performance Comparison](https://github.com/cortesh/stock-analysis/blob/main/Resources/VBA_Challange_Code_Performance_Comparison.png)
 
