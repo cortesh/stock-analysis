@@ -50,7 +50,7 @@ Continuing to the second major requirement, the project sought to compare two me
        Next j
 ```
 
-The second method, also known as "Refactoring", limited the code to a single For loop that dynamically builds 4 arrays that hold the values for each ticker symbol and outputs it to results sheet.  This method ("B") it is hoped will cut down on processing time as it needs to go through each row only once, checking for the appropriate information.  The modified code looks like this.
+The second method, also known as "Refactoring", limited the code to a single For loop that dynamically builds 4 arrays that hold the values for each ticker symbol and outputs them to a results sheet.  This method ("B") it is hoped will cut down on processing time as it needs to go through each row only once (as opposed to 12 times!, checking for the appropriate information.  The modified code looks like this.
 ```
    '4) Loop through tickers
    For i = 0 To 11
@@ -81,11 +81,11 @@ The second method, also known as "Refactoring", limited the code to a single For
        Next j
 ```
 
-Once completed speed counters were encoded to test each codes run speed (The results are displayed in screen captures located in the Resources folder as per project instructions).  Below you will see the results of the speed tests side by side in tabular format.
+Once completed speed counters were encoded to test each code's run speed (The results are displayed in screen captures, located in the Resources folder as per project instructions).  Below you will see the results of the speed tests side by side in tabular format.
 
 ![Code Performance Comparison](https://github.com/cortesh/stock-analysis/blob/main/Resources/VBA_Challange_Code_Performance_Comparison.png)
 
-As is quite clear the second method ("B") is vastly superior cutting processing time by 87% on average for both years!
+As is quite clear, the second method ("B") is vastly superior--cutting processing time by 87% on average for both years!
 
 ## Summary
 To conclude, we can say that the original comparision of "DQ" stock against its peers was inconclusive but that there seems to be value in researching further what made market conditions so dramatically different between 2017 and 2018.  Perhaps a next step would be to control for average market performance moving forward.
