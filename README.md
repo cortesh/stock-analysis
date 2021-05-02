@@ -21,8 +21,8 @@
 
 
    
-   '4) Loop through tickers
-   For i = 0 To 11
+   
+   '4) Loop through tickersFor i = 0 To 11
        ticker = tickers(i)
        totalVolume = 0
        '5) loop through rows in the data
